@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUestão 5</title>
+</head>
+
+<body>
+
+    <script>
+        function xpto() {
+            let n = 0;
+            return {
+                next:
+                    function () {
+                        if (n < 10) {
+                            n += 2;
+                            return { value: n / 2, done: false }
+                        }
+                        else {
+                            return { value: -1, done: true }
+                        }
+                    }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
